@@ -15,20 +15,15 @@ const userSchema = new Schema({
     unique: true,
     match: /.+\@.+\..+/, // This is a simple regex for email validation
   },
-  password: {
-    type: String,
-    required: true,
-    minlength: 8, // This ensures the password is at least 8 characters long
-  },
   thoughts: [
     {
-      type: mongoose.Schema.Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: 'Thought',
     },
   ],
   friends: [
     {
-      type: mongoose.Schema.Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: 'User',
     },
   ],
@@ -43,5 +38,5 @@ userSchema.virtual('friendCount').get(function () {
 userSchema.set('toJSON', { virtuals: true });
 
 // Export the model
-const User = mongoose.model('User', userSchema);
+const User = model('User', userSchema);
 module.exports = User;

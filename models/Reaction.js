@@ -1,10 +1,10 @@
-const mongoose = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 // Reaction Schema
-const reactionSchema = new mongoose.Schema({
+const reactionSchema = new Schema({
   reactionId: {
-    type: mongoose.Schema.Types.ObjectId,
-    default: () => new mongoose.Types.ObjectId(), // Automatically generate an ObjectId
+    type: Schema.Types.ObjectId,
+    default: () => new Types.ObjectId(), // Automatically generate an ObjectId
   },
   reactionBody: {
     type: String,
