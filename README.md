@@ -27,10 +27,10 @@ N/A
 
 
 Tech Stack
-Node.js: JavaScript runtime environment.
-Express.js: Web framework for Node.js, used for routing.
-MongoDB: NoSQL database for storing users, thoughts, reactions, and friend lists.
-Mongoose: ODM library for MongoDB, allowing schema-based data modeling.
+- Node.js: JavaScript runtime environment.
+- Express.js: Web framework for Node.js, used for routing.
+- MongoDB: NoSQL database for storing users, thoughts, reactions, and friend lists.
+- Mongoose: ODM library for MongoDB, allowing schema-based data modeling.
 
 
 
@@ -45,29 +45,29 @@ API Endpoints
 
 Products
 
-GET /api/users - Retrieve a list of users.
-GET /api/users/:id - Retrieve a single product by ID.
-POST /api/users - Create a new product.
-PUT /api/users/:id - Update an existing product by ID.
-DELETE /api/users/:id - Delete a product by ID.
+- GET /api/users - Retrieve a list of users.
+- GET /api/users/:id - Retrieve a single product by ID.
+- POST /api/users - Create a new product.
+- PUT /api/users/:id - Update an existing product by ID.
+- DELETE /api/users/:id - Delete a product by ID.
 
 Thoughts
 
-GET /api/thoughts - Retrieve a list of thoughts.
-GET /api/thoughts/:id - Retrieve a single thought by ID.
-POST /api/thoughts - Create a new thought.
-PUT /api/thoughts/:id - Update an existing thoughts by ID.
-DELETE /api/thoughts/:id - Delete a thought by ID.
+- GET /api/thoughts - Retrieve a list of thoughts.
+- GET /api/thoughts/:id - Retrieve a single thought by ID.
+- POST /api/thoughts - Create a new thought.
+- PUT /api/thoughts/:id - Update an existing thoughts by ID.
+- DELETE /api/thoughts/:id - Delete a thought by ID.
 
 Friend Routes
-These routes are handled under the User routes, using /api/users/:userId/friends/:friendId.
+- These routes are handled under the User routes, using /api/users/:userId/friends/:friendId.
 
 Reaction Routes
-Reactions are stored as subdocuments of thoughts.
+- Reactions are stored as subdocuments of thoughts.
 
 HTTP Method	Route	Description
-POST	/api/thoughts/:thoughtId/reactions - Add a reaction to a thought
-DELETE	/api/thoughts/:thoughtId/reactions/:reactionId	- Remove a reaction from a thought
+- POST	/api/thoughts/:thoughtId/reactions - Add a reaction to a thought
+- DELETE	/api/thoughts/:thoughtId/reactions/:reactionId	- Remove a reaction from a thought
 
 
 
