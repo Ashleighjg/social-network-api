@@ -4,7 +4,7 @@
 
 This is a RESTful API for a social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list. The API is built using Express.js for routing, MongoDB for the database, and Mongoose for object data modeling (ODM).
 
-([Link to video walkthrough](https://drive.google.com/file/d/....))
+([Link to video walkthrough](https://drive.google.com/file/d/1r7PShxAOd5pF_BmccZ7gCnVwSuIWVrKA/view))
 
 ([Code source location](https://github.com/Ashleighjg/social-network-api))
 
@@ -34,16 +34,16 @@ Tech Stack
 
 
 
-![Shows initial products in Insomnia](./Pictures/products.JPG)
+![Shows users in Insomnia](./Pictures/users.JPG)
 
-![Shows show tags in Insomnia](./Pictures/tags.JPG)
+![Shows show thoughts in Insomnia](./Pictures/thoughts.JPG)
 
-![Shows show categories in Insomnia](./Pictures/categories.JPG)
+![Shows show reactions in Insomnia](./Pictures/reactions.JPG)
 
 
 API Endpoints
 
-Products
+Users
 
 - GET /api/users - Retrieve a list of users.
 - GET /api/users/:id - Retrieve a single product by ID.
